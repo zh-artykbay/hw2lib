@@ -1,6 +1,7 @@
 package hw2lib
 
 import (
+	"fmt"
 	"math"
 	"strings"
 	"github.com/twharmon/gouid"
@@ -18,7 +19,7 @@ func Sqrt(x float64) float64 {
 	return math.Sqrt(x)
 }
 
-func GetUUID() string {
-	return gouid.String(16, gouid.MixedCaseAlpha)
+func GetUUID()  {
+	fmt.Println(gouid.String(16, gouid.MixedCaseAlpha))
 }
 
