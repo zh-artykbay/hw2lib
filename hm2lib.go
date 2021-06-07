@@ -3,6 +3,7 @@ package hw2lib
 import (
 	"math"
 	"strings"
+	"github.com/twharmon/gouid"
 )
 
 func Tolower(str string) string {
@@ -15,5 +16,9 @@ func Toupper(str string) string {
 
 func Sqrt(x float64) float64 {
 	return math.Sqrt(x)
+}
+
+func GetUUID()  {
+	return gouid.String(16, gouid.MixedCaseAlpha)
 }
 
