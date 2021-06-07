@@ -2,9 +2,9 @@ package hw2lib
 
 import (
 	"fmt"
+	"github.com/jakehl/goid"
 	"math"
 	"strings"
-	"github.com/twharmon/gouid"
 )
 
 func Tolower(str string) string {
@@ -19,7 +19,8 @@ func Sqrt(x float64) float64 {
 	return math.Sqrt(x)
 }
 
-func GetUUID()  {
-	fmt.Println(gouid.String(16, gouid.MixedCaseAlpha))
+func GetUUID() {
+	v4UUID := goid.NewV4UUID()
+	fmt.Println(v4UUID)
 }
 
